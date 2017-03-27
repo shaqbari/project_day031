@@ -1,4 +1,4 @@
-package com.ss.file;
+package com.ss.practice;
 
 import java.awt.FlowLayout;
 import java.awt.Image;
@@ -50,6 +50,8 @@ public class FileWindow extends JFrame{
 		
 		//for문으로 한개를 클릭하면 나머지가 다 열리는 것을 숙제로 해보자.
 		//선택한 거만 제외(continue)
+			
+		
 		
 
 		setSize(600, 500);
