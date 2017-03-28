@@ -14,10 +14,7 @@ import javax.swing.ImageIcon;
 
 public class MyIcon extends ImageIcon{	
 	
-	public MyIcon(URL url, int width, int height) {
-		//folder_on=new ImageIcon(this.getClass().getResource("/folder_on.png"));
-		//folder_off=new ImageIcon(this.getClass().getResource("/folder_off.png"));
-		//super(this.getClass().getResource("/folder_on.png"));//부모가 태어나기 전에 this가 쓰일수 없다.
+	public MyIcon(URL url, int width, int height) {		
 		super(url);
 		
 		Image scaledImg=this.getImage();

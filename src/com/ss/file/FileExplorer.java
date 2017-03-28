@@ -53,11 +53,6 @@ public class FileExplorer extends JFrame{
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);		
 	}
-	
-	private void setLayout() {
-		// TODO Auto-generated method stub
-		
-	}
 
 	public static void main(String[] args) {
 		new FileExplorer();

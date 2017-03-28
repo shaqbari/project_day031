@@ -13,14 +13,13 @@ import javax.swing.JPanel;
 public class MyPanel extends JPanel{
 	JLabel la;
 	JButton bt;
-	int id;
+	
 	
 	//패널이 태어날 때 그 부품도 같이 태어나야 하므로, 생성자에서 초기화하자
 	public MyPanel(String title, Icon icon, int id) {
 		la=new JLabel(title);
 		bt=new JButton(icon);
-		this.id=id;
-		
+				
 		bt.setBorderPainted(false);//경계선 없애기
 		bt.setContentAreaFilled(false);//색채우기 없음
 		bt.setFocusPainted(false);//포커스에 의한 경계없애기 다른창 클릭하면 없어지는 포커스
