@@ -11,6 +11,7 @@ import javax.swing.JFrame;
 public class FileWindow extends JFrame{	
 	//ImageIcon folder_on, folder_off;
 	MyIcon folder_on, folder_off;
+	int count=0;
 
 	public FileWindow() {	
 		setLayout(new FlowLayout());
@@ -42,10 +43,11 @@ public class FileWindow extends JFrame{
 		//원하는 경로의 하위 디렉토리/파일 구하기
 		//생성자가 길어지므로 따로 빼자
 		ArrayList<String> list=getDirList(); //여기서도 generic으로 선언해야 에러가 안난다. 
-		for (int i = 0; i < list.size(); i++) {
+		for (int i = 0; i < list.size(); i++) {			
 			String dirName=list.get(i);
-			MyPanel mp=new MyPanel(list.get(i), folder_off);
+			MyPanel mp=new MyPanel(list.get(i), folder_off, count);
 			add(mp);
+			count++;
 		}
 		
 		//for문으로 한개를 클릭하면 나머지가 다 열리는 것을 숙제로 해보자.
